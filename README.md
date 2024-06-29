@@ -12,13 +12,14 @@ This repository contains the code and resources for the project on breast arteri
   - [Testing](#testing)
   - [Feature Extraction](#feature-extraction)
   - [Inference](#inference)
+  - [Self-Supervised Learning](#self-supervised-learning)
 - [Configuration](#configuration)
 - [Requirements](#requirements)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Project Overview
-The goal of this project is to develop a deep learning-based model for the segmentation of breast arterial calcifications on mammograms. The model is based on the U-Net architecture and can be trained and tested on both GPU and CPU environments. The repository includes notebooks for preprocessing, training, testing, feature extraction, and inference.
+The goal of this project is to develop a deep learning-based model for the segmentation of breast arterial calcifications on mammograms. The model is based on the U-Net architecture and can be trained and tested on both GPU and CPU environments. The repository includes notebooks for preprocessing, training, testing, feature extraction, inference, and self-supervised learning.
 
 ## Directory Structure
 ```
@@ -30,6 +31,7 @@ The goal of this project is to develop a deep learning-based model for the segme
 ├── test.ipynb
 ├── feature_extraction.ipynb
 ├── inference.ipynb
+├── self_supervised.ipynb
 ├── README.md
 ```
 
@@ -83,6 +85,12 @@ The inference notebook is used to perform segmentation on new mammogram images.
 2. Set the paths to your images and model.
 3. Run the cells to perform inference and obtain segmentation results.
 
+### Self-Supervised Learning
+The self-supervised notebook demonstrates the use of self-supervised learning techniques without labeled data.
+1. Open `self_supervised.ipynb`.
+2. Set the paths and parameters as needed.
+3. Run the cells to train the model using self-supervised learning methods.
+
 ## Configuration
 The `config.yaml` file contains the configuration for the conda environment. Make sure to update it if you need any additional packages or changes to the environment.
 
@@ -97,5 +105,3 @@ Contributions are welcome! Please feel free to submit a Pull Request or open an 
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-
