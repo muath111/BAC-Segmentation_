@@ -1,6 +1,6 @@
 # Breast Arterial Calcification Segmentation using U-Net
 
-This repository contains the code and resources for the project on breast arterial calcification (BAC) segmentation from mammograms using a U-Net model. The project aims to automate the detection and analysis of BAC, which is an important marker for cardiovascular risk.
+This repository contains the code and resources for the project on breast arterial calcification (BAC) segmentation from mammograms using a U-Net model. The project aims to automate the detection and analysis of BAC, which is an important marker for cardiovascular risk.This branch of code is an extended version utilizing patching techniques to improve the outcomes!
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -26,6 +26,10 @@ The goal of this project is to develop a deep learning-based model for the segme
 .
 ├── config.yaml
 ├── requirements.txt
+├── preprocess_patches.ipynb
+├── train_patches.ipynb
+├── test_patches.ipynb
+├── self_supervised_patches.ipynb
 ├── preprocess.ipynb
 ├── train.ipynb
 ├── test.ipynb
@@ -57,18 +61,29 @@ The goal of this project is to develop a deep learning-based model for the segme
 
 ### Preprocessing
 The preprocessing notebook prepares the data for model training and testing. You need to set up the paths in the notebook.
+1. Open `preprocess_patches.ipynb`.
+
 1. Open `preprocess.ipynb`.
 2. Set the appropriate paths for your dataset.
 3. Run the cells to preprocess the data.
 
 ### Training
 The training notebook is used to train the U-Net model.
+1. Open `train_patches.ipynb`.
 1. Open `train.ipynb`.
 2. Ensure the paths and parameters are correctly set.
 3. Run the cells to start training the model.
 
 ### Testing
 The testing notebook evaluates the model's performance on the test dataset.
+1. Open `test_patches.ipynb`.
+2. Set the appropriate paths and parameters.
+3. Run the cells to test the model.
+
+### Self-Supervised Learning
+The self-supervised notebook demonstrates the use of self-supervised learning techniques without labeled data.
+1. Open `self_supervised_patches.ipynb`.
+
 1. Open `test.ipynb`.
 2. Set the appropriate paths and parameters.
 3. Run the cells to test the model.
