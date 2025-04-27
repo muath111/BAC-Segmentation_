@@ -30,6 +30,12 @@ The goal of this project is to develop a deep learning-based model for the segme
 ├── train_patches.ipynb
 ├── test_patches.ipynb
 ├── self_supervised_patches.ipynb
+├── preprocess.ipynb
+├── train.ipynb
+├── test.ipynb
+├── feature_extraction.ipynb
+├── inference.ipynb
+├── self_supervised.ipynb
 ├── README.md
 ```
 
@@ -56,12 +62,15 @@ The goal of this project is to develop a deep learning-based model for the segme
 ### Preprocessing
 The preprocessing notebook prepares the data for model training and testing. You need to set up the paths in the notebook.
 1. Open `preprocess_patches.ipynb`.
+
+1. Open `preprocess.ipynb`.
 2. Set the appropriate paths for your dataset.
 3. Run the cells to preprocess the data.
 
 ### Training
 The training notebook is used to train the U-Net model.
 1. Open `train_patches.ipynb`.
+1. Open `train.ipynb`.
 2. Ensure the paths and parameters are correctly set.
 3. Run the cells to start training the model.
 
@@ -74,6 +83,26 @@ The testing notebook evaluates the model's performance on the test dataset.
 ### Self-Supervised Learning
 The self-supervised notebook demonstrates the use of self-supervised learning techniques without labeled data.
 1. Open `self_supervised_patches.ipynb`.
+
+1. Open `test.ipynb`.
+2. Set the appropriate paths and parameters.
+3. Run the cells to test the model.
+
+### Feature Extraction
+This notebook extracts features from the segmented images and saves them to an Excel file.
+1. Open `feature_extraction.ipynb`.
+2. Set the paths and parameters as required.
+3. Run the cells to extract features and save them to an Excel file.
+
+### Inference
+The inference notebook is used to perform segmentation on new mammogram images.
+1. Open `inference.ipynb`.
+2. Set the paths to your images and model.
+3. Run the cells to perform inference and obtain segmentation results.
+
+### Self-Supervised Learning
+The self-supervised notebook demonstrates the use of self-supervised learning techniques without labeled data.
+1. Open `self_supervised.ipynb`.
 2. Set the paths and parameters as needed.
 3. Run the cells to train the model using self-supervised learning methods.
 
